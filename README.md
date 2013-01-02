@@ -18,8 +18,8 @@ Usage
 
 Compiling
 ---------
-To build, run build.bat. This will build it in GOG-SteamBridge\bin\Debug
-To create the portable SFX installer version, you must have WinRar installed. The trial version should work fine. Run build_sfx.bat, and it will output GOGWizard-SteamBridge.exe in the same folder.
+To build, run build.bat. This will build it in GOGWrappers-Steam\bin\Debug
+To create the portable SFX installer version, you must have WinRar installed. The trial version should work fine. Run build_sfx.bat, and it will output GOGWrappers.exe in the same folder.
 
 If you have any problems, look into the build scripts and change the parameters, or compile it yourself with VS2010.
 
