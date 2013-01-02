@@ -5,7 +5,7 @@ Usage
 -----
 
 ###Default Mode
-**You must have a gfw_high.ico in your GOG.com game folder for this to install. All GOG.com games have this, if you have deleted this file, reinstall the game.
+**You must have a gfw_high.ico in your GOG.com game folder for this to install. All GOG.com games have this, if you have deleted this file, reinstall the game.  
 1. Choose the shortcut file (*.lnk) that starts the DOSBOX or ScummVM game that you downloaded off of GOG.com  
 2. If you have selected a valid shortcut, the icon path should automatically be the gfw_high.ico for that game, but you can change this as you wish  
 3. Press "Create Wrapper". Wait for about a few seconds, and it will generate a wrapper, you can now add this to Steam with the "Add Non-Steam Game" feature
