@@ -1,16 +1,19 @@
 ::Build Batch File 
-::Requires MSBuild 
-::Uses the included batchcompile.exe to create a standalone package
-::Run in C Drive, or it will fail.
+::Requires WinRAR.EXE and MSBuild 
+::You can use 7z SFX as well, but you'll have to create your own build file for it
+::Uses WinRAR.EXE to create SFX for portable EXE
+::Get WinRAR.EXE at http://www.rarlab.com
+::Trial version should work.
+::Someone please write a script for an alternative SFX archiver
 @echo off
-
-set fileversion=1,1,0,0
 set netpath=c:\Windows\Microsoft.NET\Framework\v4.0.30319
 set projpath=%cd%\GOGWrappers-Steam\bin\Debug
 set buildpath=%cd%
-%netpath%\msbuild "%buildpath%\GOGWrappers-for-Steam.sln"
-echo start GOGWrappers.exe > start.bat
-GOGWrappers-Steam\batchcompile.exe -bat "%buildpath%\start.bat" -save "%buildpath%\GOGWrappers.exe" -icon "%buildpath%\GOGWrappers-Steam\GOGWrappers.ico" -invisible -temp -include "%projpath%\batchcompile.exe" -include "%projpath%\GOGWrappers.exe" -overwrite -fileversion %fileversion% -productversion 1,0,0,0 -productname "GOGWrappers for Steam" -description "Easily add GOG.com DOSBOX and ScummVM games to Steam" -internalname "GOGWrappers"
-del start.bat
-echo Built to %buildpath%\GOGWrappers.exe
+set rarpath=%programfiles%\WinRAR
+c:
+cd "%netpath%"
+msbuild "%buildpath%\GOGWrappers-for-Steam.sln"
+cd "%rarpath%"
+winrar a -r -ep1 -sfx -iicon"%buildpath%\GOGWrappers-Steam\GOGWrappers.ico" -z"%buildpath%\build.conf" "%buildpath%\GOGWrappers" "%projpath%\GOGWrappers.exe" "%projpath%\batchcompile.exe"
+
 pause
