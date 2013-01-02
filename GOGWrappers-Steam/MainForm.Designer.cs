@@ -46,9 +46,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(476, 13);
+            this.label1.Size = new System.Drawing.Size(474, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "GOGWizard-SteamBridge - GOG.com DOSBOX and ScummVM Wrapper Creation Wizard for St" +
+            this.label1.Text = "GOGWrappers for Steam - GOG.com DOSBOX and ScummVM Wrapper Creation Wizard for St" +
                 "eam";
             // 
             // chooseShortcut_openFileDialog
@@ -137,7 +137,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "GOGWizard-SteamBridge 1.0";
+            this.Text = "GOGWrappers for Steam 1.0";
             this.ResumeLayout(false);
             this.PerformLayout();
 

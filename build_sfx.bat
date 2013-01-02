@@ -7,13 +7,13 @@
 ::Someone please write a script for an alternative SFX archiver
 @echo off
 set netpath=c:\Windows\Microsoft.NET\Framework\v4.0.30319
-set projpath=%cd%\GOG-SteamBridge\bin\Debug
+set projpath=%cd%\GOGWrappers-Steam\bin\Debug
 set buildpath=%cd%
 set rarpath=%programfiles%\WinRAR
 c:
 cd "%netpath%"
-msbuild "%buildpath%"\GOGWizard-SteamBridge.sln
+msbuild "%buildpath%\GOGWrappers-for-Steam.sln"
 cd "%rarpath%"
-winrar a -r -ep1 -sfx -iicon"%buildpath%\GOG-SteamBridge\GOGWizard.ico" -z"%buildpath%\build.conf" "%buildpath%\GOGWizard-SteamBridge.exe" "%projpath%\GOGWizard-SteamBridge.exe" "%buildpath%\GOGWizard-SteamBridge.exe" "%projpath%\batchcompile.exe"
+winrar a -r -ep1 -sfx -iicon"%buildpath%\GOGWrappers-Steam\GOGWrappers.ico" -z"%buildpath%\build.conf" "%buildpath%\GOGWrappers" "%projpath%\GOGWrappers.exe" "%projpath%\batchcompile.exe"
 
 pause

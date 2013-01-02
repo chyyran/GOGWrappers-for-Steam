@@ -1,0 +1,13 @@
+D:\Coding\Visual Studio\GOGWrappers-for-Steam\GOGWrappers-Steam\obj\x86\Debug\Interop.IWshRuntimeLibrary.dll
+D:\Coding\Visual Studio\GOGWrappers-for-Steam\GOGWrappers-Steam\obj\x86\Debug\GOGWrappers-for-Steam.csproj.ResolveComReference.cache
+D:\Coding\Visual Studio\GOGWrappers-for-Steam\GOGWrappers-Steam\bin\Debug\batchcompile.exe
+D:\Coding\Visual Studio\GOGWrappers-for-Steam\GOGWrappers-Steam\bin\Debug\GOGWrappers.exe
+D:\Coding\Visual Studio\GOGWrappers-for-Steam\GOGWrappers-Steam\bin\Debug\GOGWrappers.pdb
+D:\Coding\Visual Studio\GOGWrappers-for-Steam\GOGWrappers-Steam\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Coding\Visual Studio\GOGWrappers-for-Steam\GOGWrappers-Steam\obj\x86\Debug\GOG_SteamBridge.BatchForm.resources
+D:\Coding\Visual Studio\GOGWrappers-for-Steam\GOGWrappers-Steam\obj\x86\Debug\GOG_SteamBridge.MainForm.resources
+D:\Coding\Visual Studio\GOGWrappers-for-Steam\GOGWrappers-Steam\obj\x86\Debug\GOG_SteamBridge.Properties.Resources.resources
+D:\Coding\Visual Studio\GOGWrappers-for-Steam\GOGWrappers-Steam\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Coding\Visual Studio\GOGWrappers-for-Steam\GOGWrappers-Steam\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Coding\Visual Studio\GOGWrappers-for-Steam\GOGWrappers-Steam\obj\x86\Debug\GOGWrappers.exe
+D:\Coding\Visual Studio\GOGWrappers-for-Steam\GOGWrappers-Steam\obj\x86\Debug\GOGWrappers.pdb

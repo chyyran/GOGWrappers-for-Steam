@@ -1,0 +1,4 @@
+D:\Coding\Visual Studio\GOGWrappers-for-Steam\GOG-SteamBridge\obj\x86\Debug\Interop.IWshRuntimeLibrary.dll
+D:\Coding\Visual Studio\GOGWrappers-for-Steam\GOG-SteamBridge\obj\x86\Debug\GOGWrappers for Steam.csproj.ResolveComReference.cache
+D:\Coding\Visual Studio\GOGWrappers-for-Steam\GOGWrappers-Steam\obj\x86\Debug\Interop.IWshRuntimeLibrary.dll
+D:\Coding\Visual Studio\GOGWrappers-for-Steam\GOGWrappers-Steam\obj\x86\Debug\GOGWrappers for Steam.csproj.ResolveComReference.cache

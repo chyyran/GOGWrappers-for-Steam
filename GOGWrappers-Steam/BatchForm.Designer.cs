@@ -42,9 +42,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(16, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(517, 13);
+            this.label1.Size = new System.Drawing.Size(515, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "GOGWizard-SteamBridge Batch Process - Process a folder of GOG.com DOSBOX and Scum" +
+            this.label1.Text = "GOGWrappers for Steam Batch Process - Process a folder of GOG.com DOSBOX and Scum" +
                 "mVM Shortcuts";
             // 
             // batchFileTextbox
@@ -100,7 +100,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "BatchForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "GOGWizard-SteamBridge 1.0";
+            this.Text = "GOGWrappers for Steam 1.0";
             this.ResumeLayout(false);
             this.PerformLayout();
 

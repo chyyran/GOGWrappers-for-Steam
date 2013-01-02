@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("GOG-SteamBridge")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("GOGWrappers for Steam")]
+[assembly: AssemblyDescription("Easily add GOG.com DOSBOX and ScummVM games to Steam")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("GOG-SteamBridge")]
-[assembly: AssemblyCopyright("Copyright ©  2013")]
+[assembly: AssemblyProduct("GOGWrappers for Steam")]
+[assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

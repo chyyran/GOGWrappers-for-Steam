@@ -1,4 +1,4 @@
-GOGWizard-SteamBridge
+GOGWrappers for Steam
 =====================
 
 Usage

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GOGWizard-SteamBridge", "GOG-SteamBridge\GOGWizard-SteamBridge.csproj", "{53FF2BDD-A3A1-40D6-88CA-D104543B9B79}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GOGWrappers-for-Steam", "GOGWrappers-Steam\GOGWrappers-for-Steam.csproj", "{53FF2BDD-A3A1-40D6-88CA-D104543B9B79}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
