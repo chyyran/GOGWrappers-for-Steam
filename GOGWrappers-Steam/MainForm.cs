@@ -6,10 +6,10 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using IWshRuntimeLibrary;
 using System.Text.RegularExpressions;
 using System.IO;
 using System.Diagnostics;
+using Shell32;
 
 
 
@@ -17,6 +17,7 @@ namespace GOG_SteamBridge
 {
     public partial class MainForm : Form
     {
+        String shortcutTempPath = Application.StartupPath + @"\temp.lnk";
         public MainForm()
         {
 
@@ -34,8 +35,9 @@ namespace GOG_SteamBridge
             chooseIcon_openFileDialog.Filter = "Icon files (*.ico)|*.ICO";
 
             saveWrapperDialog.Title = "Choose where to save the wrapper";
-            saveWrapperDialog.Filter = "Applications (*.exe)|*.EXE";
+            saveWrapperDialog.Filter = "Applications (*.exe)|*.exe";
             saveWrapperDialog.AddExtension = true;
+            
 
         }
 
@@ -49,8 +51,9 @@ namespace GOG_SteamBridge
 
         private void chooseShortcut_openFileDialog_FileOk(object sender, CancelEventArgs e)
         {
-
-            if (System.IO.File.Exists(gogIconPath))
+            File.Copy(chooseShortcut_openFileDialog.FileName, shortcutTempPath, true);
+            
+            if (Path.GetFileName(gogIconPath) == "gfw_high.ico")
             {
                 shortcutTextBox.Text = chooseShortcut_openFileDialog.FileName;
                 chooseIcon_openFileDialog.FileName = gogIconPath;
@@ -71,18 +74,14 @@ namespace GOG_SteamBridge
         {
             get
             {
-                WshShell shell = new WshShell();
-                WshShortcut shortcut = (WshShortcut)shell.CreateShortcut(chooseShortcut_openFileDialog.FileName);
-                String iconPath;
-                if (shortcut.WorkingDirectory.Contains("ScummVM"))
-                {
-                    return iconPath = Regex.Replace(shortcut.WorkingDirectory, "(?i)ScummVM", "gfw_high.ico");
-                }
-                else
-                {
-
-                    return iconPath = Regex.Replace(shortcut.WorkingDirectory, "(?i)DOSBOX", "gfw_high.ico");
-                }
+                var shl = new Shell32.Shell();         // Move this to class scope
+                var dir = shl.NameSpace(System.IO.Path.GetDirectoryName(shortcutTempPath));
+                var itm = dir.Items().Item(System.IO.Path.GetFileName(shortcutTempPath));
+                var lnk = (Shell32.ShellLinkObject)itm.GetLink;
+                //lnk.GetIconLocation(out strIcon);
+                String strIcon;
+                lnk.GetIconLocation(out strIcon);
+                return strIcon;
             }
 
         }
@@ -112,7 +111,7 @@ namespace GOG_SteamBridge
             {
                 return;
             }
-            label1.Text = "Generating a wrapper, please allow Windows to run batchcompile.exe";
+            label1.Text = "Generating a wrapper";
             chooseShortcutButton.Enabled = false;
             chooseIconButton.Enabled = false;
             createWrapperButton.Enabled = false;
@@ -120,15 +119,16 @@ namespace GOG_SteamBridge
             String saveFileName = chooseShortcut_openFileDialog.SafeFileName.Replace(".lnk", ".exe");
             saveWrapperDialog.FileName = saveFileName;
             saveWrapperDialog.ShowDialog();
+            Creation.cleanup(chooseShortcut_openFileDialog.SafeFileName);
+            this.Close();
+            
         }
             
 
 
         private void saveWrapperDialog_FileOk(object sender, CancelEventArgs e)
         {
-            System.IO.File.Copy(Application.StartupPath + @"\wrapper.exe", saveWrapperDialog.FileName);
-            Creation.cleanup();
-            this.Close();
+            System.IO.File.Copy(Application.StartupPath + @"\wrapper.exe", saveWrapperDialog.FileName,true);
         }
 
         private void batchModeBtn_Click(object sender, EventArgs e)
@@ -138,9 +138,10 @@ namespace GOG_SteamBridge
         }
 
 
-
     }
         #endregion
+
+
 
     }
     

@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.IO;
-using IWshRuntimeLibrary;
+using Shell32;
 using System.Text.RegularExpressions;
 using System.Diagnostics;
 
@@ -42,7 +42,7 @@ namespace GOG_SteamBridge
                 return;
             }
 
-            label1.Text = "Generating wrappers, please allow Windows to run batchcompile.exe";
+            label1.Text = "Generating wrappers";
             string [] fileEntries = Directory.GetFiles(batchProcess_folderBrowserDialog.SelectedPath);
             int i = 0;
             foreach(string filenames in fileEntries)
@@ -51,26 +51,23 @@ namespace GOG_SteamBridge
                 if(!filenames.EndsWith(".lnk",true,null)){
                     continue;
                 }
-                WshShell shell = new WshShell();
-                WshShortcut shortcut = (WshShortcut)shell.CreateShortcut(filenames);
+                String shortcutTempPath = Application.StartupPath + @"\temp.lnk";
+                File.Copy(filenames, shortcutTempPath,true);
+                var shl = new Shell32.Shell();         // Move this to class scope
+                var dir = shl.NameSpace(System.IO.Path.GetDirectoryName(shortcutTempPath));
+                var itm = dir.Items().Item(System.IO.Path.GetFileName(shortcutTempPath));
+                var lnk = (Shell32.ShellLinkObject)itm.GetLink;
                 String iconPath;
-                if (shortcut.WorkingDirectory.Contains("ScummVM"))
-                {
-                    iconPath = Regex.Replace(shortcut.WorkingDirectory, "(?i)ScummVM", "gfw_high.ico");
-                }
-                else
-                {
-                    
-                    iconPath = Regex.Replace(shortcut.WorkingDirectory, "(?i)DOSBOX", "gfw_high.ico");
-                }
+                lnk.GetIconLocation(out iconPath);
+                
 
-                if (!System.IO.File.Exists(iconPath)){
+                if (Path.GetFileName(iconPath) != "gfw_high.ico"){
                     continue;
                 }
 
                 Creation.createWrapper(filenames, Path.GetFileName(filenames), iconPath);
-                System.IO.File.Copy(Application.StartupPath+@"\wrapper.exe",batchProcess_folderBrowserDialog.SelectedPath+@"\"+Path.GetFileNameWithoutExtension(filenames)+".exe");
-                Creation.cleanup();
+                System.IO.File.Copy(Application.StartupPath+@"\wrapper.exe",batchProcess_folderBrowserDialog.SelectedPath+@"\"+Path.GetFileNameWithoutExtension(filenames)+".exe",true);
+                Creation.cleanup(Path.GetFileName(filenames));
                 i++;
 
             }

@@ -100,7 +100,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "BatchForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "GOGWrappers for Steam 1.0";
+            this.Text = "GOGWrappers for Steam 1.1";
             this.ResumeLayout(false);
             this.PerformLayout();
 
