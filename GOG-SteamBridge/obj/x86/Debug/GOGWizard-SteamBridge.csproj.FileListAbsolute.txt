@@ -1,0 +1,26 @@
+c:\users\ronny\documents\visual studio 2010\Projects\GOG-SteamBridge\GOG-SteamBridge\bin\Debug\batchcompile.exe
+c:\users\ronny\documents\visual studio 2010\Projects\GOG-SteamBridge\GOG-SteamBridge\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\ronny\documents\visual studio 2010\Projects\GOG-SteamBridge\GOG-SteamBridge\obj\x86\Debug\Interop.IWshRuntimeLibrary.dll
+c:\users\ronny\documents\visual studio 2010\Projects\GOG-SteamBridge\GOG-SteamBridge\obj\x86\Debug\GOGWizard-SteamBridge.csproj.ResolveComReference.cache
+c:\users\ronny\documents\visual studio 2010\Projects\GOG-SteamBridge\GOG-SteamBridge\obj\x86\Debug\GOG_SteamBridge.MainForm.resources
+c:\users\ronny\documents\visual studio 2010\Projects\GOG-SteamBridge\GOG-SteamBridge\obj\x86\Debug\GOG_SteamBridge.Properties.Resources.resources
+c:\users\ronny\documents\visual studio 2010\Projects\GOG-SteamBridge\GOG-SteamBridge\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\ronny\documents\visual studio 2010\Projects\GOG-SteamBridge\GOG-SteamBridge\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\ronny\documents\visual studio 2010\Projects\GOG-SteamBridge\GOG-SteamBridge\obj\x86\Debug\GOG_SteamBridge.BatchForm.resources
+C:\Users\Ronny\Documents\Visual Studio 2010\Projects\GOG-SteamBridge\GOG-SteamBridge\bin\Debug\GOGWizard-SteamBridge.exe
+C:\Users\Ronny\Documents\Visual Studio 2010\Projects\GOG-SteamBridge\GOG-SteamBridge\bin\Debug\GOGWizard-SteamBridge.pdb
+C:\Users\Ronny\Documents\Visual Studio 2010\Projects\GOG-SteamBridge\GOG-SteamBridge\obj\x86\Debug\GOGWizard-SteamBridge.exe
+C:\Users\Ronny\Documents\Visual Studio 2010\Projects\GOG-SteamBridge\GOG-SteamBridge\obj\x86\Debug\GOGWizard-SteamBridge.pdb
+D:\Coding\Visual Studio\GOGWizard-SteamBridge\GOG-SteamBridge\bin\Debug\batchcompile.exe
+D:\Coding\Visual Studio\GOGWizard-SteamBridge\GOG-SteamBridge\bin\Debug\GOGWizard-SteamBridge.exe
+D:\Coding\Visual Studio\GOGWizard-SteamBridge\GOG-SteamBridge\bin\Debug\GOGWizard-SteamBridge.pdb
+D:\Coding\Visual Studio\GOGWizard-SteamBridge\GOG-SteamBridge\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Coding\Visual Studio\GOGWizard-SteamBridge\GOG-SteamBridge\obj\x86\Debug\Interop.IWshRuntimeLibrary.dll
+D:\Coding\Visual Studio\GOGWizard-SteamBridge\GOG-SteamBridge\obj\x86\Debug\GOGWizard-SteamBridge.csproj.ResolveComReference.cache
+D:\Coding\Visual Studio\GOGWizard-SteamBridge\GOG-SteamBridge\obj\x86\Debug\GOG_SteamBridge.BatchForm.resources
+D:\Coding\Visual Studio\GOGWizard-SteamBridge\GOG-SteamBridge\obj\x86\Debug\GOG_SteamBridge.MainForm.resources
+D:\Coding\Visual Studio\GOGWizard-SteamBridge\GOG-SteamBridge\obj\x86\Debug\GOG_SteamBridge.Properties.Resources.resources
+D:\Coding\Visual Studio\GOGWizard-SteamBridge\GOG-SteamBridge\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Coding\Visual Studio\GOGWizard-SteamBridge\GOG-SteamBridge\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Coding\Visual Studio\GOGWizard-SteamBridge\GOG-SteamBridge\obj\x86\Debug\GOGWizard-SteamBridge.exe
+D:\Coding\Visual Studio\GOGWizard-SteamBridge\GOG-SteamBridge\obj\x86\Debug\GOGWizard-SteamBridge.pdb

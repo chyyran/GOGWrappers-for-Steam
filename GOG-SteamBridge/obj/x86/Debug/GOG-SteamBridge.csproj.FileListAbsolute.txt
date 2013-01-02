@@ -1,0 +1,12 @@
+c:\users\ronny\documents\visual studio 2010\Projects\GOG-SteamBridge\GOG-SteamBridge\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\ronny\documents\visual studio 2010\Projects\GOG-SteamBridge\GOG-SteamBridge\obj\x86\Debug\GOG_SteamBridge.MainForm.resources
+c:\users\ronny\documents\visual studio 2010\Projects\GOG-SteamBridge\GOG-SteamBridge\obj\x86\Debug\GOG_SteamBridge.Properties.Resources.resources
+c:\users\ronny\documents\visual studio 2010\Projects\GOG-SteamBridge\GOG-SteamBridge\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\ronny\documents\visual studio 2010\Projects\GOG-SteamBridge\GOG-SteamBridge\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\ronny\documents\visual studio 2010\Projects\GOG-SteamBridge\GOG-SteamBridge\bin\Debug\GOG-SteamBridge.exe
+c:\users\ronny\documents\visual studio 2010\Projects\GOG-SteamBridge\GOG-SteamBridge\bin\Debug\GOG-SteamBridge.pdb
+c:\users\ronny\documents\visual studio 2010\Projects\GOG-SteamBridge\GOG-SteamBridge\obj\x86\Debug\GOG-SteamBridge.exe
+c:\users\ronny\documents\visual studio 2010\Projects\GOG-SteamBridge\GOG-SteamBridge\obj\x86\Debug\GOG-SteamBridge.pdb
+c:\users\ronny\documents\visual studio 2010\Projects\GOG-SteamBridge\GOG-SteamBridge\obj\x86\Debug\GOG-SteamBridge.csproj.ResolveComReference.cache
+c:\users\ronny\documents\visual studio 2010\Projects\GOG-SteamBridge\GOG-SteamBridge\obj\x86\Debug\Interop.IWshRuntimeLibrary.dll
+c:\users\ronny\documents\visual studio 2010\Projects\GOG-SteamBridge\GOG-SteamBridge\bin\Debug\batchcompile.exe
